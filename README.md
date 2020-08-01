@@ -18,6 +18,9 @@ Process:
 6. Based on the users choice the program would take his input then convert it to seconds then calculate the difference between the start and end times and use the results to deduce how much they would have to pay based on the $5 rate.
 
 Contributors:
+
 ![Kevin Dodor](https://github.com/doski-codes/)
+
 ![Kweyakie Blebo](https://github.com/AfiDede)
+
 ![Kwame Owusu Appiah-Kubi](https://github.com/Quibik)
