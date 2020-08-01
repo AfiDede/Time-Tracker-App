@@ -3,7 +3,6 @@ from datetime import datetime
 import csv, os, sys
 import pandas as pd
 
-
 # create file.csv
 def createCSV():
     # check if file.csv exists already
@@ -17,13 +16,11 @@ def createCSV():
         columns.to_csv('./tracking.csv')
         return
 
-
 # get the date and time from the system and return them as a tuple
 def getDate():
     date_time = datetime.now()
     date = date_time.date()
     return date
-
 
 # combine the date and time
 def combineDateTime(date, time):
@@ -45,7 +42,7 @@ def calcPay(time):
 
 # add parameters to file.csv
 def addToCSV(name, startDate, startTime, endDate, endTime, time, pay):
-    csv_list = ['',name, startDate, startTime, endDate, endTime, round(time, 3), pay]
+    csv_list = ['',name, startDate, startTime, endDate, endTime, time, pay]
     my_file = open('./tracking.csv', 'a')
     writer = csv.writer(my_file, delimiter=',')
     writer.writerow(csv_list)
