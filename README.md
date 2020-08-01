@@ -19,8 +19,8 @@ Process:
 
 Contributors:
 
-![Kevin Dodor](https://github.com/doski-codes/)
+[Kevin Dodor](https://github.com/doski-codes/)
 
-![Kweyakie Blebo](https://github.com/AfiDede)
+[Kweyakie Blebo](https://github.com/AfiDede)
 
-![Kwame Owusu Appiah-Kubi](https://github.com/Quibik)
+[Kwame Owusu Appiah-Kubi](https://github.com/Quibik)
