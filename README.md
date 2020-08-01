@@ -16,3 +16,8 @@ Process:
 4. Based on the users choice the program would take his input then convert it to seconds.
 5. Ask the user if he'd like to input his own preferred date and time or if he'd like to use the current systems date and input the time as the ending time.
 6. Based on the users choice the program would take his input then convert it to seconds then calculate the difference between the start and end times and use the results to deduce how much they would have to pay based on the $5 rate.
+
+Contributors:
+![Kevin Dodor](https://github.com/doski-codes/)
+![Kweyakie Blebo](https://github.com/AfiDede)
+![Kwame Owusu Appiah-Kubi](https://github.com/Quibik)
