@@ -11,12 +11,12 @@ Description: The Azubi Time Tracking Program is a program tailored to meet Nana'
 
 Installation:
 1. To use this program locally, you should have Python 3 installed on your workstation.
-2. Click on the green Code tab in the repository and download the zip file or run 'git clone https://github.com/AfiDede/Time-tracker-app.git' in the directory you want to download it to.
-3. Extract the py.file and run in your python shell or run in an editor.
+2. Click on the green Code tab in the repository and download the zip file or run `git clone https://github.com/AfiDede/Time-tracker-app.git` in the directory you want to download it to.
+3. Extract the `.py` file and run in your python shell or run in an editor.
 
 Usage: After successful installation you are ready to benefit from this amazing program. The steps below should guide you to effective achieve your desire output of the program
 Process:
-1. Check if there is a file named 'tracking.csv' in the directory and create it if it doesn't exit.
+1. Check if there is a file named `tracking.csv` in the directory and create it if it doesn't exit.
 2. Ask the user to input the name of the client whose money he's trying to track.
 3. Ask the user if he'd like to input his own preferred date and time or if he'd like to use the current systems date and input the time as the starting time.
 4. Based on the users choice the program would take his input then convert it to seconds.
