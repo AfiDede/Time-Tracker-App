@@ -2,14 +2,21 @@
 Project Name: Time Tracker Program
 
 PROBLEM:
+
 Client needs a solution to calculate hours spent on work and the amount of money he will make at a rate of $5 per hour.
 
 SOLUTION:
-Language Used: Python_
-Description: This Time Tracking Program is a program that allows a user in this case “Nana” to:
+Language Used: Python.
+
+Description:
+
+This Time Tracking Program is a program that allows a user in this case “Nana” to:
 1.Enter the time they started working on an activity and the time they ended work on a particular date or any date entered per the user’s preference.
+
 2. Calculate the hours the user spent working.
+
 3. Calculate the amount of money he makes tackling a project at a rate of $5 per hour.
+
 4. Store time entered and information concerning an activity in a csv file for future references
 
 PROGRAM DEPENDENCIES 
