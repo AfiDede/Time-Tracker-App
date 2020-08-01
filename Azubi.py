@@ -30,11 +30,11 @@ def combineDateTime(date, time):
     date_time = datetime.combine(date, time)
     return date_time
 
-# calculate the time elasped 
+# calculate the time elasped
 def calcTime(start, end):
     # verify that the end time is greater than the start time
     if start > end:
-        sys.exit("Start time is greater than end time. \n Pls check and try again")
+        sys.exit("Start time is greater than end time. \nPls check and try again")
     else:
         return end - start
 
@@ -73,7 +73,7 @@ def inputTime(var):
     time = input(f"Enter the {var} time in 24hr format (HH:MM): \n")
     time = datetime.strptime(time, '%H:%M').time()
     return date, time
-    
+
 # Use dates and times for calculations then append to csv file
 def endProcess(name, startDate, startTime, endDate, endTime, start, end):
     startDate = startDate.strftime('%Y-%m-%d')
@@ -86,3 +86,62 @@ def endProcess(name, startDate, startTime, endDate, endTime, start, end):
     print("Entry appended to file")
     return 1
 
+def main():
+    createCSV()
+    name = input("Enter the name of the client: ")
+
+    print("\nSTART TIME")
+    resp = int(input("1. Enter your own start date and time? \n2. Enter your time and use system date?\n"))
+
+    if (resp == 1):
+        # let user enter their date and time
+        var = "start"
+        start_val = inputDateTime(var)
+        start = getDateTimeSeconds(start_val[0], start_val[1])
+
+        print("\nEND TIME")
+        resp = int(input("1. Enter your own start date and time? \n2. Enter your time and use system date?\n"))
+
+        if (resp == 1):
+            # let user enter their date and time
+            var = "end"
+            end_val = inputDateTime(var)
+            end = getDateTimeSeconds(end_val[0], end_val[1])
+            endProcess(name, start_val[0], start_val[1], end_val[0], end_val[1], start, end)
+        elif (resp == 2):
+            # let user end time and use system date
+            var = "end"
+            end_val = inputTime(var)
+            end = getDateTimeSeconds(end_val[0], end_val[1])
+            endProcess(name, start_val[0], start_val[1], end_val[0], end_val[1], start, end)
+        else:
+            print("Invalid input. \nPlease try again")
+    elif (resp == 2):
+        # let user end time and use system date
+        var = "start"
+        start_val = inputTime(var)
+        start = getDateTimeSeconds(start_val[0], start_val[1])
+
+        print("\nEND TIME")
+        resp = int(input("1. Enter your own start date and time? \n2. Enter your time and use system date?\n"))
+
+        if (resp == 1):
+            # let user enter their date and time
+            var = "end"
+            end_val = inputDateTime(var)
+            end = getDateTimeSeconds(end_val[0], end_val[1])
+            endProcess(name, start_val[0], start_val[1], end_val[0], end_val[1], start, end)
+        elif (resp == 2):
+            # let user end time and use system date
+            var = "end"
+            end_val = inputTime(var)
+            end = getDateTimeSeconds(end_val[0], end_val[1])
+            endProcess(name, start_val[0], start_val[1], end_val[0], end_val[1], start, end)
+        else:
+            print("Invalid input. \nPlease try again")
+    else:
+        print("Invalid input. \nPlease try again")
+
+    return 1
+
+if __name__ == '__main__': main()
